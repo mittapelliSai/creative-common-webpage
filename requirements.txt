@@ -1,24 +1,19 @@
-gunicorn
 
 
-Flask-Migrate
+Flask-SQLAlchemy==3.1.1
 
-Jinja2
+Flask-Migrate==4.0.5
 
-Werkzeug
+Jinja2==3.1.3
 
-itsdangerous
+Werkzeug==2.3.7
 
-click
+itsdangerous==2.1.2
 
-MarkupSafe
+click==8.1.7
 
-python-dotenv
+MarkupSafe==2.1.5
+
+python-dotenv==1.0.1
 
 sqlite3; python_version<'3.12'
-Flask
-Flask-SQLAlchemy
-psycopg2-binary
-gunicorn
-
-SQLAlchemy
