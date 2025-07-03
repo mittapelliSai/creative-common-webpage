@@ -1,23 +1,17 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python",
-      "config": {
-        "runtime": "python3.11",
-        "installCommand": "python -m pip install -r requirements.txt"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
-    }
-  ]
+
+ "version": 2,
+
+ "builds": [
+
+  { "src": "app.py", "use": "@vercel/python" }
+
+ ],
+
+ "routes": [
+
+  { "src": "/(.*)", "dest": "/app.py" }
+
+ ]
+
 }
